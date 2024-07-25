@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'fig-tree';
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: ;
+  src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  --fonte-principal: 'fig-tree';
+  --fonte-italico: 'fif-tree-italic';
+
+  --cor-fundo: #F4D04E;
+  --cor-paragrafo: #6B6B6B;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: var(--fonte-principal);
+}
+
+body, html {
+  background-color: var(--cor-fundo);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  background-color: white;
+  width: 257px;
+  height: 500px;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  
+  padding: 24px;
+}
+
+main > img, header, p {
+  margin-bottom: 12px;
+}
+
+main img {
+  background-size: cover;
+  border-radius: 10px;
+}
+
+main p {
+  font-size: 14px;
+}
+
+main h1 {
+  font-size: 20px;
+}
+
+main h2 {
+  font-size: 12px;
+  font-weight: 800;
+
+  text-align: center;
+
+  background-color: var(--cor-fundo);
+
+  padding: 4px 12px;
+  width: 73px;
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
