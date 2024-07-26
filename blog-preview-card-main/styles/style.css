@@ -37,10 +37,11 @@ body, html {
 main {
   background-color: white;
   width: 257px;
-  height: 500px;
+  height: 410px;
 
   border-radius: 20px;
   border: 1px solid black;
+  box-shadow: 7px 7px 0px black;
 
   display: flex;
   flex-direction: column;
@@ -48,42 +49,13 @@ main {
   padding: 24px;
 }
 
-header, h2.title {
-  margin-bottom: 12px;
-}
-
 img {
   background-size: cover;
   border-radius: 10px;
-}
-
-img, p {
   margin-bottom: 24px;
 }
 
-div.author-photo {
-  background-image: url(../assets/images/image-avatar.webp);
-  background-size: contain;
-
-  width: 32px;
-  height: 32px;
-}
-
-p {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--cor-paragrafo);
-}
-
-p.publish-date {
-  color: black;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-h2.title {
+header > h2 {
   background-color: var(--cor-fundo);
 
   max-width: 73px;
@@ -95,18 +67,49 @@ h2.title {
   text-align: center;
 
   padding: 8px 10px;
+  margin-bottom: 12px;
   border-radius: 6px;
 }
 
-h2.author-name {
-    
+header > p {
+  color: black;
+  margin-bottom: 15px;
+}
+
+img {
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+h1:hover {
+  color: var(--cor-fundo);
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cor-paragrafo);
+  margin-bottom: 24px;
 }
 
 footer {
   display: flex;
 
   height: 32px;
+}
 
-  flex-direction: row;
-  align-items: top;
+footer > figcaption {
+  align-self: center;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  margin-left: 15px;
 }
