@@ -48,37 +48,65 @@ main {
   padding: 24px;
 }
 
-main > img, header, p {
+header, h2.title {
   margin-bottom: 12px;
 }
 
-main img {
+img {
   background-size: cover;
   border-radius: 10px;
 }
 
-main p {
-  font-size: 14px;
+img, p {
+  margin-bottom: 24px;
 }
 
-main h1 {
+div.author-photo {
+  background-image: url(../assets/images/image-avatar.webp);
+  background-size: contain;
+
+  width: 32px;
+  height: 32px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cor-paragrafo);
+}
+
+p.publish-date {
+  color: black;
+}
+
+h1 {
   font-size: 20px;
 }
 
-main h2 {
-  font-size: 12px;
-  font-weight: 800;
+h2.title {
+  background-color: var(--cor-fundo);
+
+  max-width: 73px;
+  max-height: 26px;
+
+  font-size: 15px;
+  font-weight: 900;
 
   text-align: center;
 
-  background-color: var(--cor-fundo);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
 
-  padding: 4px 12px;
-  width: 73px;
-  border-radius: 4px;
+h2.author-name {
+    
 }
 
 footer {
   display: flex;
+
+  height: 32px;
+
   flex-direction: row;
+  align-items: top;
 }
