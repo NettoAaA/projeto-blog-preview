@@ -2,26 +2,22 @@
     
     main {
         flex-direction: row;
-        align-items: flex-start;
+        width: 500px;
+
+        border: none;
+    }
+
+    main > span.header-image {
+        background-image: url(../assets/images/illustration-article.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         width: 500px;
+        height: 415px;
+
+        border-radius: 20px;
+        margin-right: 10px;
     }
 
-    main > article.blog-text {
-        flex-direction: row;
-    }
-
-    main > article.blog-text > img {
-        max-width: 200px;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    main > article.blog-text > header {
-        display: flex;
-        flex-direction: column;
-
-        width: 250px;
-        height: 400px;
-    }
+    
 }

@@ -43,14 +43,15 @@ main {
   padding: 24px;
 }
 
-main > article.blog-text {
-  display: flex;
-  flex-direction: column;
-}
+main > span.header-image {
+  background-image: url(../assets/images/illustration-article.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-img {
-  border-radius: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+  height: 200px;
+
+  border-radius: 20px;
 }
 
 header > h2 {
