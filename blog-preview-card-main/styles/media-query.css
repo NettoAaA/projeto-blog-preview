@@ -1,0 +1,27 @@
+@media screen and (min-width:520px) {
+    
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+
+        width: 500px;
+    }
+
+    main > article.blog-text {
+        flex-direction: row;
+    }
+
+    main > article.blog-text > img {
+        max-width: 200px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    main > article.blog-text > header {
+        display: flex;
+        flex-direction: column;
+
+        width: 250px;
+        height: 400px;
+    }
+}

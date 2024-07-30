@@ -3,14 +3,8 @@
   src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
-@font-face {
-  font-family: ;
-  src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
-}
-
 :root {
   --fonte-principal: 'fig-tree';
-  --fonte-italico: 'fif-tree-italic';
 
   --cor-fundo: #F4D04E;
   --cor-paragrafo: #6B6B6B;
@@ -49,8 +43,12 @@ main {
   padding: 24px;
 }
 
+main > article.blog-text {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
-  background-size: cover;
   border-radius: 10px;
   margin-bottom: 24px;
 }
